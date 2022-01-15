@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+body{
+    background-color: #f4f2ef;
+}
+img{
+    user-select: none;
+}
+
+/* Barra de navegação
+------------------------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #242409;
+}
+
+.navegacao{
+    display: flex;
+    min-width: 50%;
+    align-items:center ;
+}
+.navegacao img{
+    height: 200px;
+}
+.navegacao a:link{
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+}
+.navegacao ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+}
+a:link, a:active, a:visited{
+    color: #c2c233;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #27b811;
+    border-bottom: 1px solid #5f7a7a;
+    cursor: pointer;
+}
+/* Carousel
+-------------------*/
+.w-100 {
+    width: 100% !important;
+    height: 86vh;
+}
+
+/* Principal
+------------------------------------*/
+.principal{
+    display: flex;
+    margin: 10px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.layout-inferior{
+    flex: 1 0 400px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+iframe{
+    min-width: 100%;
+    height: 300px;
+}
+
+/*Galeria de fotos
+-----------------------------*/
+.galeria{
+    padding: 10px;
+}
+
+.galeria-titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.galeria-fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.moldura{
+    flex: 1 0 300px;
+    padding: 10px;
+}
+.moldura img{
+    width: 100%;
+    height: auto;
+}
+
+/* Modal
+---------------------------*/
+
+.modals{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    visibility: hidden;
+    z-index:5;
+}
+
+.modals.active{
+    visibility: visible;
+}
+
+.modalContents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modalContents img{
+    width: 65vw;
+    z-index: 1;
+}
+
+#btnClose{
+    position: absolute;
+    top: 20px;
+    right: 220px;
+    color: #f4f2ef;
+    font-size: 1.5em;
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    user-select: none;
+}
+
+#btnClose:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Textos
+-----------------------------*/
+.titulo{
+    color: #248316;
+}
+
+/*Rodapé
+----------------*/
+.rodape{
+    background-color: #007fb6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rodape img{
+    max-height: 160px;
+}
+#secult{
+    max-height: 80px;
+}
