@@ -19,6 +19,7 @@ header{
     z-index: 5;
     width: 100%;
 }
+
 header .logo{
     font-size: 1.2em;
     color: #f4f2ef;
@@ -30,13 +31,8 @@ header .logo{
     align-items:center ;
 }
 
-.navegacao img{
-    height: 200px;
-}
-
 .navegacao a:link, header .logo{
     text-transform: uppercase;
-    font-family: 'Cabin', sans-serif;
 }
 
 .navegacao ul{
@@ -85,6 +81,11 @@ a:hover{
     flex: 1 0 400px;
     padding: 5px 20px;
     margin-bottom: 10px;
+}
+
+.principal .historia{
+    font-family: Arial, sans-serif;
+    max-width: 480px;
 }
 
 iframe{
@@ -169,6 +170,11 @@ iframe{
 -----------------------------*/
 .titulo{
     color: #248316;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fontCabin{
+    font-family: 'Cabin', sans-serif;
 }
 
 /*Rodapé
@@ -176,9 +182,16 @@ iframe{
 .rodape{
     background-color: #242409;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding: 4px;
 }
 .rodape .foto{
-    max-height: 160px;
+    max-height: 80px;
+    margin-left: 50px;
+}
+
+.rodape .textoRodape{
+    color: #f4f2ef;
+    margin: auto 0;
 }
