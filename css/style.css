@@ -99,21 +99,21 @@ iframe{
     padding: 10px;
 }
 
-.galeria .galeria-titulo{
+.galeria .galeriaTitulo{
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
 
-.galeria .galeria-fotos{
+.galeria .galeriaFotos{
     display: flex;
     flex-wrap: wrap;
 }
-.galeria .galeria-fotos .moldura{
+.galeria .galeriaFotos .moldura{
     flex: 1 0 350px;
     padding: 10px;
 }
-.galeria .galeria-fotos .moldura .foto{
+.galeria .galeriaFotos .moldura .foto{
     width: 100%;
     height: auto;
 }
@@ -148,8 +148,6 @@ iframe{
 
 #btnClose{
     position: absolute;
-    top: 20px;
-    right: 220px;
     color: #f4f2ef;
     font-size: 1.5em;
     z-index: 10;
