@@ -12,8 +12,15 @@ img{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 30px;
     background-color: #242409;
+    position:fixed;
+    top:0;
+    z-index: 5;
+    width: 100%;
+}
+header img{
+    max-height: 40px;
 }
 
 .navegacao{
@@ -33,6 +40,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: auto;
     margin-top: auto;
 }
 a:link, a:active, a:visited{
@@ -50,7 +58,8 @@ a:hover{
 -------------------*/
 .w-100 {
     width: 100% !important;
-    height: 86vh;
+    height: 93vh;
+    margin-top: 40px;
 }
 
 /* Principal
@@ -82,7 +91,7 @@ iframe{
 .galeria .galeria-titulo{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .galeria .galeria-fotos{
@@ -107,7 +116,7 @@ iframe{
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     visibility: hidden;
-    z-index:5;
+    z-index:6;
 }
 
 .modals.active{
@@ -155,7 +164,7 @@ iframe{
 /*Rodapé
 ----------------*/
 .rodape{
-    background-color: #007fb6;
+    background-color: #242409;
     display: flex;
     justify-content: space-around;
     align-items: center;
