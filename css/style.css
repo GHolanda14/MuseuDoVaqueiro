@@ -11,16 +11,17 @@ img{
 ------------------------------------*/
 header{
     display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
+    justify-content: space-around;
+    padding: 5px 10px;
     background-color: #242409;
     position:fixed;
     top:0;
     z-index: 5;
     width: 100%;
 }
-header img{
-    max-height: 40px;
+header .logo{
+    font-size: 1.2em;
+    color: #f4f2ef;
 }
 
 .navegacao{
@@ -28,21 +29,30 @@ header img{
     min-width: 50%;
     align-items:center ;
 }
+
 .navegacao img{
     height: 200px;
 }
-.navegacao a:link{
+
+.navegacao a:link, header .logo{
     text-transform: uppercase;
     font-family: 'Cabin', sans-serif;
 }
+
 .navegacao ul{
     list-style: none;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: auto;
-    margin-top: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 16px;
 }
+
+.navegacao ul li{
+    margin-left: 30px;
+    font-size: .9em;
+}
+
 a:link, a:active, a:visited{
     color: #c2c233;
     text-decoration: none;
@@ -171,7 +181,4 @@ iframe{
 }
 .rodape .foto{
     max-height: 160px;
-}
-#secult{
-    max-height: 80px;
 }
