@@ -45,6 +45,7 @@ a:hover{
     border-bottom: 1px solid #5f7a7a;
     cursor: pointer;
 }
+
 /* Carousel
 -------------------*/
 .w-100 {
@@ -61,7 +62,7 @@ a:hover{
     justify-content: center;
 }
 
-.layout-inferior{
+.principal .layout{
     flex: 1 0 400px;
     padding: 5px 20px;
     margin-bottom: 10px;
@@ -78,21 +79,21 @@ iframe{
     padding: 10px;
 }
 
-.galeria-titulo{
+.galeria .galeria-titulo{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.galeria-fotos{
+.galeria .galeria-fotos{
     display: flex;
     flex-wrap: wrap;
 }
-.moldura{
-    flex: 1 0 300px;
+.galeria .galeria-fotos .moldura{
+    flex: 1 0 350px;
     padding: 10px;
 }
-.moldura img{
+.galeria .galeria-fotos .moldura .foto{
     width: 100%;
     height: auto;
 }
@@ -113,14 +114,14 @@ iframe{
     visibility: visible;
 }
 
-.modalContents{
+.modals .modalContents{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.modalContents img{
+.modals .modalContents .foto{
     width: 65vw;
     z-index: 1;
 }
@@ -159,7 +160,7 @@ iframe{
     justify-content: space-around;
     align-items: center;
 }
-.rodape img{
+.rodape .foto{
     max-height: 160px;
 }
 #secult{
