@@ -26,11 +26,36 @@ window.addEventListener('resize',function(){
 
 /*Fechar modal*/
 btnClose.addEventListener('click',function(){
-    modal.classList.remove('active');
+    fecharModal();
+    diminuirImagem();
 });
 
 window.addEventListener('click',function(event){
     if(event.target == modalContents){
-        modal.classList.remove('active');
+        fecharModal();
+        diminuirImagem();
     }
 });
+
+let fecharModal = function(){
+    modal.animate([
+        {opacity: 1},
+        {opacity: 0}
+    ],
+    {
+        duration: 400
+    });    
+    setTimeout(function(){
+        modal.classList.remove("active");
+    },300);
+}
+
+let diminuirImagem = function(){
+    modalImg.animate([
+    {transform: 'scale(1)'},
+    {transform: 'scale(0.5)'}
+    ],
+    {
+        duration: 400
+    });
+}
