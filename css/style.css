@@ -193,6 +193,9 @@ iframe{
     .carousel-caption{
         max-height: 110px !important;
     }
+    .modals .modalContents .foto{
+        width: 88vw;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -201,7 +204,10 @@ iframe{
     }
     .navbar ul li{
         margin-left: 2px;
-    }    
+    }
+    .modals .modalContents .foto{
+        width: 85vw;
+    }
 }
 
 
